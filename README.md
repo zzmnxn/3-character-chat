@@ -1,7 +1,24 @@
 # HateSlop 3기 엔지니어x프로듀서 합동 캐릭터 챗봇 프로젝트
+## 0. 🎬 서비스 기획
+
+### 컨셉
+환승연애 팀에 취업한 AI PD 친구 '이다음'이 사용자의 연애 이야기를 듣고,  
+미련도(%)를 분석해 개인화된 감정 리포트를 제공하는 캐릭터 챗봇 웹 서비스.
+
+### 서비스 흐름
+
+| 단계 | 장면 | 주요 내용 |
+|------|------|-----------|
+| 1. 도입 (Intro) | 시작 화면 | 친구(PD)가 등장해 연애 프로그램 기획을 위한 이야기를 부탁함 |
+| 2. 회상 (Story) | 채팅 인터페이스 | 사용자가 전 연애(X와의 경험)를 자유롭게 입력 |
+| 3. 결과 (Report) | 감정 리포트 화면 | 주요 감정 키워드, 감정 해석 문장, 미련도(%) 출력 |
+| 4. 마무리 (Closing) | 프로그램 추천 화면 | 친구(PD)가 맞춤 연애 프로그램 추천 |
+
+### 화면 스크린샷
+<img width="1416" height="1610" alt="image" src="https://github.com/user-attachments/assets/7fd94fd2-4652-435e-b97c-247bc7aba7e6" />
+<img width="2772" height="1612" alt="image" src="https://github.com/user-attachments/assets/ccdcd519-7d5b-4e8b-b01c-c0b947c41cc1" />
 
 ## 1. 📐 시스템 아키텍처
-
 ### 데이터 흐름
 
 사용자 입력 → Flask API → ChatbotService → RAG 검색 (ChromaDB) → OpenAI API → 응답 생성
